@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        /*
+        #box{
+            height: 200px;
+            width: 200px;
+            background: red;
+        }
+
+         */
+        div{
+            width: 200px;
+            height: 200px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+<!--  <div id="box">
+     <div id="box2"></di>
+  </div> -->
+
+<!--  <div id="box"></div>-->
+
+  <div>这是第二个盒子</div>
+  <section class="warp">
+    <div>这是第一个盒子</div>
+  </section>
+
+
+<script>
+   // console.log(document.getElementById('box1'));  获取一个错误的id
+   //console.log(document.getElementById('box'));
+    /*
+      document.getElementById()
+      1.通过id进行获取
+      2.获取一个不存在的元素，得到的结果会是null
+      3.getElementById()只有document有，id是当前页面唯一的。
+      4.遇到第一个符合条件的元素，就返回第一个元素
+     */
+
+    // console.log(document.querySelector('#box1'));
+    //console.log(document.querySelector('div'))
+     /*
+       在父级下找到某个元素
+     * */
+     //console.log(document.querySelector('.warp').querySelector('div'));
+     console.log(document.querySelector('.wap div'));  //css中包含选择器
+
+
+
+    /*
+        document.querySelector()
+        1.通过选择器进行获取
+        2.遇到第一个符合条件的元素，就返回第一个元素
+        3.获取一个不存在的元素，得到的结果会是null
+        4.document/指定父级
+
+     */
+</script>
+
+</body>
+</html>

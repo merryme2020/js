@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        button {
+            width: 100px;
+            height: 35px;
+            text-align: center;
+            font: 18px/35px "微软雅黑";
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+  <button id="btn">按钮</button>
+
+
+<script>
+    document.getElementById('btn').onclick = function () {
+        //当元素被点击的时候要做的事情
+         document.getElementById('btn').style.background = 'red';
+    }
+
+    /*
+      onclick - 点击
+      function -点击后要做的事情（函数）
+
+      修改元素样式
+      style 样式
+          background 背景（相关样式都可以修改）
+          ele.style.属性 = '属性值'  属性值外面加单引号
+     */
+</script>
+
+</body>
+</html>

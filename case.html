@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+       button{
+        width:100px;
+        height: 35px;
+        text-align: center;
+        font: 18px/35px "微软雅黑";
+        margin: 0;  /*清除默认样式*/
+           padding: 0;
+        }
+
+    </style>
+</head>
+<body>
+   <button id="btn">按钮</button>
+   <div class="box"></div>
+     <script>
+         //获取元素
+         // document.getElementById('btn');
+         // console.log(document.getElementById('btn'))
+
+         /*
+         getElementById
+          document - 文件
+           get - 获取
+           element - 元素
+           by - 通过
+           id - id
+           在当前文档中通过id获取元素
+
+           js区分大小写
+
+           console.log(设置项要放置的元素)
+          */
+
+         //获取元素，通过元素选择器来选择
+         document.querySelector('#btn');
+         document.querySelector('.box');
+         console.log(document.querySelector('#btn'));
+         console.log(document.querySelector('.box'));
+         /*
+            document.querySelector(选择器- Css中使用的选择器)
+          */
+     </script>
+
+</body>
+</html>

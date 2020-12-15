@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+   <style>
+       #box {
+           width: 200px;
+           height: 200px;
+           background: red;
+       }
+   </style>
+</head>
+<body>
+   <div id="box"></div>
+
+<script>
+    /*
+       函数创建完成之后，需要调用，否则不执行
+       调用有名函数  函数名();
+     */
+
+    function fn() {
+        alert(1);
+    }
+
+  //  fn(); //函数调用
+    // 匿名函数调用
+    var  box = document.getElementById('box');
+    box.onclick = function () { //把函数赋值给事件（如果事件立刻执行，函数就立刻执行）
+        //放置代码块
+        alert(2);
+
+
+    }
+</script>
+
+</body>
+</html>

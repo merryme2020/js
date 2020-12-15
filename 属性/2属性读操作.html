@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        #box{
+            width: 200px;
+            height: 200px;
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div  id="box">这是文字</div>
+
+    <script>
+        var box = document.getElementById('box');// 获取元素
+        // box.onclick = function () {
+        //     box.style.width='300px'; //获取属性的操作  元素.属性  box元素.样式
+        // }
+
+        // box['onclick'] = function () {
+        //     box['style']['width'] = '300px';
+        // }
+
+        // box['on'+'click'] = function () {  //+ 对于它没有影响
+        //     box['style']['width'] = '300px';
+        // }
+
+        //两种属性可以一起操作
+        box.onclick = function () {
+            box['style'].width='300px';
+        }
+
+        box.onclick = function () {
+            //box.style.font-size
+           // box.style.fontSize = '36px'
+            box.style['font-size'] = '36px';
+
+        }
+
+
+    </script>
+
+</body>
+</html>
