@@ -4,7 +4,29 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body>
+  <style>
+      a {
+          font-size: 20px;
+      }
+      img{
+          display: block;   /*独占一行*/
+          width: 400px;
+      }
+  </style>
+
+<img>
+   <a  id="link" href="属性/1属性操作.html">链接</a>
+   <img  id="image" src="images/test.png">
+
+   <script>
+       var link = document.getElementById('link');
+       var image = document.getElementById('image');
+       //
+       // console.log(link.href)  //打印href 返回绝对路径
+       // console.log(image.src)  //打印src  返回绝对路径
+       console.log(link.tagName,image.tagName); //打印标记名字
+       //console.log(image.tagName);
+   </script>
 
 </body>
 </html>
