@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>
+        <textarea id="text" rows="6" cols="40"></textarea>
+        <br>
+        <button id="btn">提交</button>
+        <ul id="list">
+
+        </ul>
+    </div>
+    <script>
+        /***
+         * 1.获取元素（输入框、提交按钮、list）
+         * 2.给当前提交按钮，绑定点击事件
+         * 3.获取输入框的内容
+         * 4.把输入内容放到list里面
+         */
+         var text = document.getElementById('text');
+         var btn = document.getElementById('btn');
+         var list = document.getElementById('list');
+
+         btn.onclick = function () {
+            var txt = text.value
+            //innerTHML会替换当前标签内的所有内容
+             list.innerHTML = list.innerHTML + '<li>' + txt + '</li>';
+
+
+         }
+
+    </script>
+
+
+
+</body>
+</html>
