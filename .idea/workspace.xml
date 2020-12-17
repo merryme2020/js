@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0119b56b-edf3-40ee-baad-31352ff9df1b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/玩转div.html" beforeDir="false" afterPath="$PROJECT_DIR$/玩转div.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,10 +27,11 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../vue-manager-system" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/加号" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\software\Git\workspace\merryme\js\加号" />
       <recent name="D:\software\Git\workspace\merryme\js\属性\images" />
       <recent name="D:\software\Git\workspace\merryme\js\images" />
       <recent name="D:\software\Git\workspace\merryme\js\image" />
@@ -58,7 +60,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607788568901</updated>
-      <workItem from="1607788569995" duration="55295000" />
+      <workItem from="1607788569995" duration="58811000" />
     </task>
     <servers />
   </component>
