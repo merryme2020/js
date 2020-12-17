@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0119b56b-edf3-40ee-baad-31352ff9df1b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/留言板/+=.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/留言板/images/test.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/留言板/images/test1.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/留言板/images/test2.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/留言板/images/test3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/留言板/images/test4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/留言板/留言板.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/if/1点击显示div.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/if/2if语句.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/if/3if..else.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/if/4多条件判断.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,15 +30,15 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/留言板/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/if" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\software\Git\workspace\merryme\js\if" />
       <recent name="D:\software\Git\workspace\merryme\js\留言板\images" />
       <recent name="D:\software\Git\workspace\merryme\js\留言板" />
       <recent name="D:\software\Git\workspace\merryme\js\加号" />
       <recent name="D:\software\Git\workspace\merryme\js\属性\images" />
-      <recent name="D:\software\Git\workspace\merryme\js\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -66,7 +63,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607788568901</updated>
-      <workItem from="1607788569995" duration="65961000" />
+      <workItem from="1607788569995" duration="69407000" />
     </task>
     <servers />
   </component>
