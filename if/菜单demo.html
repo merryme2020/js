@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        select{
+            border: 0; 					/*取消边框*/
+            width: 200px;
+            height: 40px;
+            background-color: white;			/*背景可以改为一张图片*/
+            color: rgba(132, 133, 144, 0.8);
+            font-size: 20px;
+
+
+            -webkit-appearance: none;			/*取消小三角的显示*/
+            text-indent: 0.01px;             		/*仅仅为了美观*/
+            background-image: url(images/test.png);
+            background-repeat: no-repeat;		/*不解释，但是别忘了*/
+            background-position: 170px 10px;		/*把小三角放到该放的地方*/
+            margin: 0 20px;
+        }
+        span.so{					/*******以下为按键，与下拉框无关*******/
+            display: inline-block;
+            width: 200px;
+            font-size: 20px;
+            text-align: center;
+            line-height: 40px;
+            color: white;
+            background-color:#e45353;
+        }
+
+    </style>
+</head>
+<body>
+
+<form>
+    <select>
+        <option>中国</option>
+        <option>国外</option>
+        <option>日本</option>
+    </select>
+    <select>
+        <option>资阳市</option>
+        <option>北京市</option>
+        <option>成都市市</option>
+    </select>
+    <select>
+        <option>昌平区</option>
+        <option>武侯区</option>
+        <option>雁江区</option>
+    </select>
+    <select>
+        <option>东小口镇</option>
+        <option>测试镇1</option>
+        <option>测试镇2</option>
+    </select>
+    <a href="#"><span class="so">搜索</span></a>
+</form>
+
+</body>
+</html>

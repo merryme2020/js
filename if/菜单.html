@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <div class="wrap">
+      <div class="menu">
+          <div class="title">菜单</div>
+          <ul class="list">
+
+              <li>微博</li>
+              <li>图片</li>
+              <li>博客</li>
+              <li>视频</li>
+              <li>更多>></li>
+
+          </ul>
+
+      </div>
+
+  </div>
+
+<script>
+    /****
+     * 1.获取元素 title、list
+     * 2.给title绑定点击事件
+     * 3.利用if语句进行判断
+     * 3.1 根据display是否为noll,决定应该是显示还是隐藏  style.display获取的是行间的样式，利用布尔值进行代替
+     * 4.根据判断结果，修改list样式
+     */
+
+
+    var title = document.querySelector('.title');
+    var list = document.querySelector('.list');
+    var onOff =true;
+
+    title.onclick = function () {
+        console.log(onOff);
+
+        if (onOff) {
+            list.style.display = 'block';
+
+
+        } else {
+            list.style.display = 'none';
+
+        }
+        onOff = !onOff;
+    }
+
+
+</script>
+
+</body>
+</html>

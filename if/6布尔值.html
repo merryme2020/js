@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #box{
+            width: 200px;
+            height: 200px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+<button id="btn">按钮</button>
+<div id="box"></div>
+<script>
+    var box = document.getElementById('box');
+    var btn = document.getElementById('btn');
+    btn.onclick = function () {
+      //  console.log(box.style.width);  找不到
+    }
+        if (box.style.width=='200px') {
+            alert('条件成立');
+        }else { //当不满足上述条件的时候，执行这里面的代码
+            alert('条件不成立');
+        }
+
+
+    /**
+     * 1.style是行间样式（写在当前标签上面的），现在写在了内部样式表里面
+     * 2.不推荐写行间样式
+     *   href
+     *   src
+     *   tagName
+     */
+
+
+
+</script>
+
+</body>
+</html>

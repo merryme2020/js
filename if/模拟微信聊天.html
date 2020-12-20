@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        body{
+            display: block;
+            margin: 8px;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        ul{
+            list-style: none;
+        }
+
+        img{
+            vertical-align: top;
+        }
+
+        .nav img{
+            padding: 10px 0 0 16px;
+            float: left;
+        }
+
+
+
+        .list{
+            width: 318px;
+            height: 498px;
+            margin: 47px 0 0 19px;
+            padding: 20px;
+            overflow: auto;
+            box-sizing: border-box;
+        }
+
+        .list p{
+            width: 230px;
+            box-sizing: border-box;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+
+        .right,.left{
+            margin-bottom: 20px;
+        }
+
+
+        .right img{
+            float: right;
+        }
+
+
+        .right p{
+            float: right;
+            background: #bab3ce;
+            color: #fff;
+            margin-left: 13px;
+        }
+
+        .left img{
+            float: left;
+            width: 30px;
+            height: 30px;
+        }
+
+        .left p{
+            float: left;
+            background: #e5e5e5;
+            margin-left: 13px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="iphone">
+        <ul class="list">
+<!--            <li class="right">-->
+<!--                <img  src="images/test2.jpg" alt="">-->
+<!--                <p>说：哈，好呀，多少钱我都愿意~~呵呵</p>-->
+<!--            </li>-->
+<!--            <li class="left">-->
+<!--                <img src="images/test1.JPG" alt="">-->
+<!--                <p>说：这个很简单，我们去测试驿站学习就行了~~</p>-->
+<!--            </li>-->
+<!--            <li class="right">-->
+<!--                <img src="images/test2.JPG" alt="">-->
+<!--                <p>说：好啊，你先帮我学会js再说</p>-->
+<!--            </li>-->
+
+
+<!--            <li class="left">-->
+<!--                <img src="images/test1.JPG" alt="">-->
+<!--                <p>说：咦？土豪？？</p>-->
+<!--            </li>-->
+<!--            <li class="right">-->
+<!--                <img src="images/test2.jpg" alt="">-->
+<!--                <p>说：大家好，我是土豪~</p>-->
+            </li>
+        </ul>
+        <div class="nav">
+            <img id="pic" src="images/test2.jpg" alt="">
+            <input id="txt" type="text">
+            <button id="btn">发送</button>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    /****
+     * 切换发送的头像
+     * 1.获取头像的图片的元素
+     * 2.绑定点击事件
+     * 3.切换图片src（需要判断,应该是哪个图片?）
+     */
+    var pic = document.getElementById('pic');
+    var  onOff = true;
+    pic.onclick = function () {
+        if (onOff) {
+            pic.src= 'images/test1.JPG';
+            onOff = false;
+        }else {
+            pic.src= 'images/test2.JPG';
+            onOff = true;
+        }
+        //  onOff = !onOff;
+
+    }
+
+    /**
+     * 添加内容进ul
+     * 1.获取元素（按钮、头像、文字、添加到哪里去?ul）
+     * 2.给按钮绑定点击事件
+     * 3.获取头像地址及文字内容（如果内容为空，不允许发送）
+     * 4.扔到 list里面去
+     //  */
+    var btn = document.getElementById('btn');
+    var txt = document.getElementById('txt');
+    var list =document.querySelector('.list');
+    btn.onclick = function () {
+        var value = txt.value;
+        if (value==''){
+            alert('内容为空不允许发送');
+        }else {
+            //头像地址不要用src获取,根据onOff状态选择哪个图片路径
+            if (onOff){
+                // list.innerHTML += '<img src="images/test2.JPG"/>';
+                list.innerHTML = '<li class="right"><img src="images/test2.jpg" atl=""><p>'+value + '</p></li> '+  list.innerHTML;
+
+            }else {
+                // list.innerHTML += '<img src="images/test1.JPG"/>';
+                list.innerHTML = '<li class="left"><img src="images/test1.JPG" atl=""><p>'+ value + '</p></li>' +  list.innerHTML;
+            }
+        }
+
+    }
+
+</script>
+</body>
+</html>

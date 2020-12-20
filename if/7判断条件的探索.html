@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #box{
+            width: 200px;
+            height: 200px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+<button id="btn">按钮</button>
+<div id="box"></div>
+<script>
+    var box = document.getElementById('box');
+    var btn = document.getElementById('btn');
+    var onOff = true;
+    btn.onclick = function () {
+        console.log(!(box.style.width=='200px')); //打印条件
+        // if (box.style.width=='200px') {
+        //     alert('条件成立');
+        // }else {
+        //     alert('条件不成立');
+        // }
+
+        // if (false){
+        //     alert('条件成立');
+        // }else {
+        //     alert('条件不成立');
+        // }
+
+        if (onOff){
+            alert('条件成立');
+          //  onOff = false;  //修改变量为false(再次点击的时候，onOff已经变为false)
+
+        }else {
+            alert('条件不成立');
+         //   onOff = true;
+        }
+            //每次都需要修改onOff的值，为当前的相反值
+             onOff = !onOff
+        /****
+         * 布尔值
+         * -false  假
+         * true
+         */
+    }
+
+</script>
+
+</body>
+</html>

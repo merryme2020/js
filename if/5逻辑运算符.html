@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   <input id="score" type="text">
+   <button id="btn">评级</button>
+
+   <script>
+
+       var score = document.getElementById('score');
+       var btn = document.getElementById('btn');
+
+       /**
+        * 逻辑运算符 与或非
+        * && - 与
+        * || - 或
+        * ！ - 非
+        */
+       btn.onclick = function () {
+               var scoreTxt = score.value;
+
+             // 1. 逻辑与（&&）
+             // if (scoreTxt <90 && scoreTxt >=60){
+             //   alert('同时满足了')
+             //   }else {
+             //    alert('没有满足');
+             //    }
+             //
+
+
+           // //2. 逻辑(或(||)
+           //   if (scoreTxt >90 || scoreTxt <20){
+           //     alert('比较极端的成绩')
+           //     }else {
+           //      alert('正常的成绩');
+           //      }
+
+           // //3. 逻辑非(!)
+              if (!scoreTxt > 90){
+                  alert('非常好');
+              }else {
+                  alert('一般般');
+              }
+       }
+
+   </script>
+
+</body>
+</html>

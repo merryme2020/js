@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        img {
+            vertical-align: top;
+            width: 536px;
+            height: 356px;
+
+        }
+    </style>
+</head>
+<body>
+      <div class="wrap">
+          <div class="pic">
+              <a id="prev" href="javascript:;"></a>
+              <img id="img" src="images/test1.JPG" alt="">
+              <a id="next" herf="javascript:;"></a>
+          </div>
+          <p id="txt">这是第<span>1</span>张图片</p>
+      </div>
+
+<script>
+    /***
+     * 1.获取元素(next img)
+     * 2.next绑定点击事件
+     */
+      var img = document.getElementById('img');
+      var next = document.getElementById('next');
+      var num = 0;
+      next.onclick = function () {
+         // num = num + 1;
+         // num += 1;
+          num++; //每次为这个值增加1
+          if (num>=3 ){
+              num = 0;
+          }
+          // console.log(num);
+          img.src = 'images/img'+ (num + 1) +'.jpg';
+
+
+      }
+
+    /*****
+     * a标签是超链接，会导致页面的甩你或者跳转页面，所以我们再href添加javascript:;来进制这个的发生
+     */
+</script>
+</body>
+</html>
